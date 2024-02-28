@@ -10,15 +10,14 @@
     color: red;
 }
 body{
-    background-image: url("background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #262626;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
 }
+
 .container h1{
     color: #bb86fc;
     margin: 20px 10px 10px 10px;
@@ -55,6 +54,25 @@ body{
 }
 .container input[type="submit"]:hover{
     background-color: #00e8f9;
+}
+.header {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+}
+.headerh1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.myp{
+    margin-top: 0px;
+    font-size: 20px;
 }
 a{
     text-decoration: none;
