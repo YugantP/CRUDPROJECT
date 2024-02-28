@@ -10,7 +10,9 @@
     color: red;
 }
 body{
-    background-color: #262626;
+    background-size: cover;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
