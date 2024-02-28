@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.alert{
+    color: white;
+    font-weight: bold;
+    background-color: #363636;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    padding: 5px 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius:5px;
+    text-align: center;
+}
+.container h1{
+    color: #bb86fc;
+    margin: 20px 10px 10px 10px;
+}
+.container{
+    background-color: #363636;
+    opacity: 0.9;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    max-width: 90%;
+    min-height: 480px;
+}
+
+.container input[type="password"]:hover{
+    background-color: #dbdbdb;
+    color: #000;
+}
+.container input[type="submit"]{
+    background-color: #0393db;
+    color: #fff;
+    font-size: 2vh;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all ease 0.3s;
+}
+.container input[type="submit"]:hover{
+    background-color: #00e8f9;
+}
+.container input[type="text"]:hover{
+    background-color: #dbdbdb;
+    color: #000;
+}
+.back_button{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    background-color: #3700b3;
+    color: #ffffff;
+    margin-bottom: 10px;
+    transition: all ease 0.3s;
+}
+.back_button:hover{
+    font-weight: 700;
+    background-color: #4600e9;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+.container input{
+    font-weight: 1000;
+}
+.container input[type="tel"]:hover{
+    background-color: #dbdbdb;
+    color: #000;
+}
+.container input[type="email"]:hover{
+    background-color: #dbdbdb;
+    color: #000;
+}
+.container input[type="number"]:hover{
+    background-color: #dbdbdb;
+    color: #000;
+}
+
+
+.container select:hover{
+    box-shadow: 0 5px 15px #00000059;
+    background-color: #dbdbdb;
+    color: #000;
+}
+
+.container form{
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3vh;
+    height: 100%;
+}
+
+
+.container input{
+    color: #fff;
+    background-color: #232323;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 2vh;
+    border-radius: 1vh;
+    width: 100%;
+    outline: none;
+    transition: all ease 0.3s;
+}
+.container input[type="number"]{
+    font-size: 2vh;
+}
+.container input[type="tel"]{
+    font-size: 2vh;
+}
+
+.container select{
+    color: #fff;
+    background-color: #232323;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 2vh;
+    font-weight: 1000;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    transition: all ease 0.3s;
+}
+
+.dateofbirth{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
