@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php include("header.php");?>
-    <h1>Registered Students:</h1>
+    <h1>Checked In Guests:</h1>
 
     <?php
     include("connection.php");
@@ -64,7 +64,7 @@
         <?php
     }
     ?>
-    <a href="http://localhost/CRUD/index_reg.php" class="add_new_student">Add a new student</a>
+    <a href="http://localhost/CRUD/index_reg.php" class="add_new_student">New Check In</a>
     <?php
     include("footer.php");
     ?>
