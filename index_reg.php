@@ -21,8 +21,8 @@
                 <input type="tel" placeholder="Phone" name="phone" class="inp" required>
                 <select name="gender" id="gender" class="inp genderopt" required>
                     <option value="gender">Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
                 </select>
                 <input type="text" placeholder="Address" name="address" class="inp" required>
                 <div class="dateofbirth">

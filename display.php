@@ -31,7 +31,7 @@
             <td>Date</td>
             <td>Month</td>
             <td>Year</td>
-            <td>Action</td> <!-- New column for the delete button -->
+            <td>Action</td>
         </tr>
         <?php
             while ($result = mysqli_fetch_array($data)) {
@@ -47,21 +47,24 @@
                     <td><?php echo $result['dob_day']?></td>
                     <td><?php echo $result['dob_month']?></td>
                     <td><?php echo $result['dob_year']?></td>
-                    <td><a class="update" href=''>Update</a><a class="delete" href="delete.php?id=<?=$result["phone"] ?>\">Delete</a></td>
+                    <td><a class="update" href=update.php?id=<?=$result['phone']?>>Update</a><a class="delete" href=delete.php?id=<?=$result['phone']?>>Delete</a></td>
                 </tr>
                 <?php
             }
         ?>
     </table>
 
-    <a href="http://localhost/CRUD/index_reg.php" class="add_new_student">Add a new student</a>
+    
 
     <?php
     }
     else {
-        echo "the table does not have records";
+        ?>
+        <div class="norecords">The table does not have any records.</div>
+        <?php
     }
     ?>
+    <a href="http://localhost/CRUD/index_reg.php" class="add_new_student">Add a new student</a>
     <?php
     include("footer.php");
     ?>

@@ -1,18 +1,22 @@
 <?php
 include("connection.php");
-if(isset($_GET['id'])) {
 
+if(isset($_GET["id"])){
     $id = mysqli_real_escape_string($conn, $_GET['id']);
+
+    $sql = "DELETE FROM users WHERE phone='".$id."'";
     
-    $query = "DELETE FROM users WHERE phone='$id'";
-    
-    if(mysqli_query($conn, $query)) {
-        header("Location: display.php");
-        exit();
+    if($conn->query($sql) === TRUE) {
+?>
+        <script type="text/javascript">
+            window.alert("Record deleted successfully.");
+            window.location.href = "display.php";
+        </script>
+<?php
     } else {
-        echo "Error deleting record: " . mysqli_error($conn);
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
-} else {
-    echo "No ID specified for deletion.";
 }
+// Redirect to the display page
+header("location: display.php");
 ?>
