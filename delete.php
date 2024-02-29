@@ -8,10 +8,7 @@ if(isset($_GET["id"])){
     
     if($conn->query($sql) === TRUE) {
 ?>
-        <script type="text/javascript">
-            window.alert("Record deleted successfully.");
-            window.location.href = "display.php";
-        </script>
+        <script type="text/javascript">window.alert("Record deleted successfully.")</script>
 <?php
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

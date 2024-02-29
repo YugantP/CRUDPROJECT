@@ -23,7 +23,9 @@ h1{
     text-align: center;
  }
 body{
-    background-color: #262626;
+    background-size: cover;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -111,6 +113,7 @@ body{
 
 
 table{
+    opacity: 0.75;
     border-collapse: collapse;
     margin: 10px 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
