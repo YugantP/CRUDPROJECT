@@ -2,9 +2,11 @@
    
 	
    include("connection.php");
-   $query = "SELECT * FROM users";
-   $data = mysqli_query($conn, $query);
-   $result = mysqli_fetch_array($data)
+   $id = $_GET['id'];
+
+    $query = "SELECT * FROM users WHERE phone='$id'";
+    $data = mysqli_query($conn, $query);
+    $result = mysqli_fetch_array($data);
 ?>
 
 <!DOCTYPE html>

@@ -47,10 +47,12 @@
                     <td><?php echo $result['dob_day']?></td>
                     <td><?php echo $result['dob_month']?></td>
                     <td><?php echo $result['dob_year']?></td>
-                    <td><a class="update" href=update.php?id=<?=$result['phone']?>>Update</a><a class="delete" href=delete.php?id=<?=$result['phone']?>>Delete</a></td>
+                    <td><a class="update" href="update.php?id=<?=$result['phone']?>">Update</a>
+                    <a class="delete" href="delete.php?id=<?=$result['phone']?>">Delete</a></td>
                 </tr>
                 <?php
             }
+            $conn -> close();
         ?>
     </table>
 
