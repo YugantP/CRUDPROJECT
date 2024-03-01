@@ -11,3 +11,6 @@ everything works now just some finishing touch required
 
 commit "all done"
 its done
+
+commit "updating"
+adding the screenshots and bug fixes
