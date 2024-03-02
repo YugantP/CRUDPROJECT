@@ -17,6 +17,3 @@ if ($conn)
 else{
     echo "Connection falied".mysqli_connect_error();
 }
-
-
-?>
