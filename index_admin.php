@@ -7,19 +7,16 @@
     <link rel="stylesheet" href="style_admin.css">
     <script type="text/javascript">
         function validate(){
-            // Retrieve the values of username and password when the form is submitted
             let uname = document.getElementById("user").value;
             let key = document.getElementById("pass").value;
-            
-            // Check if the username and password are correct
+
             if (uname === "admin" && key === "admin"){
                 window.location.href = "http://localhost/CRUD/display.php";
-                return false; // Prevent form submission
+                return false;
             }
             else{
-                // Display error message if the credentials are incorrect
                 document.getElementById("alert").innerText = "* Invalid Username or Password";
-                return false; // Prevent form submission
+                return false;
             }
         }
     </script>
